@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: #726da8;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+      width: 100%;
+    }
+    .container-two {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      width: 100%;
+    }
+
+    .embed iframe {
+      aspect-ratio: 16/9;
+      width: 100%;
+      border-radius: 8px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 900px) {
+      .container,
+      .container-two {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="embed">
+        <iframe
+          src="https://www.youtube.com/embed/eeFbKDrLOUw?si=YkiAW3MbvkE3V921"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="embed">
+        <iframe
+          src="https://www.youtube.com/embed/N7JCXQJyBE4?si=0-o_gsER_uLNYvIl"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <div class="container-two">
+      <div class="embed">
+        <iframe
+          src="https://www.youtube.com/embed/sR6tjNq8Ywk?si=z48GjDOe7IaZmLqo"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="embed">
+        <iframe
+          src="https://www.youtube.com/embed/rtvAqRPKtNw?si=ZDRLmaSqvJiPpG8Q"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="embed">
+        <iframe
+          src="https://www.youtube.com/embed/hSpM3I0KIGI?si=fopzZAFVRq0qUL0Y"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </body>
+</html>

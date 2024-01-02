@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css grids</title>
+  </head>
+  <style>
+    .box {
+      background-color: blueviolet;
+      color: white;
+      font-size: 24px;
+      border-radius: 8px;
+
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .boxes {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      /* grid-template-rows: repeat(2, 100px 200px); */
+      grid-gap: 20px;
+      /* if i want it seperately
+      grid-row-gap: 20px;
+      grid-column-gap: 20px; */
+    }
+    /* The best approach is to use fr: fraction which automatically will calculate the amount of space it should be taken based on the width of the grid */
+  </style>
+  <body>
+    <div class="boxes">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+      <div class="box">9</div>
+      <div class="box">10</div>
+      <div class="box">11</div>
+      <div class="box">12</div>
+    </div>
+  </body>
+</html>

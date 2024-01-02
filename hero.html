@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Hero</title>
+  </head>
+  <style>
+    header {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+        url("https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      text-align: center;
+      color: white;
+      padding: 60px;
+    }
+    header button {
+      padding: 8px 15px;
+      border-radius: 4px;
+      border: none;
+    }
+
+    @media (max-width: 800px) {
+      header {
+        padding: 30px 0;
+      }
+
+      header h1 {
+        font-size: 20px;
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <h3>Wanaka</h3>
+      <h1>New Zealand</h1>
+      <p>Under the stars</p>
+      <button>Learn More</button>
+    </header>
+  </body>
+</html>
